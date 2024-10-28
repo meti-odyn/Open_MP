@@ -1,0 +1,3 @@
+/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir
+/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

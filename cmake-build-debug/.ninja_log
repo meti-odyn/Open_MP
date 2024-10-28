@@ -1,0 +1,27 @@
+# ninja log v6
+1	15	1730123533842508098	build.ninja	db3a7fda842539be
+1	87	1730123452584599004	CMakeFiles/Open_MP.dir/main.cpp.o.ddi	5bbfa69e456ae4e
+87	91	1730123452670596691	CMakeFiles/Open_MP.dir/main.cpp.o.modmap	5113da295d4a00c8
+87	91	1730123452670596691	/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json	5113da295d4a00c8
+87	91	1730123452670596691	CMakeFiles/Open_MP.dir/CXX.dd	5113da295d4a00c8
+128	1483	1729002505594616164	CMakeFiles/Open_MP.dir/main.cpp.o	1ffb052822764199
+1483	1555	1729002506949587971	Open_MP	ab86646d79bcbd4b
+106	118	1728644556006438346	CMakeFiles/Open_MP.dir/util.cpp.o	9cb776d0d9d7fdd6
+2	18	1728644555902441079	CMakeFiles/Open_MP.dir/util.cpp.o.ddi	88940483380521a3
+86	90	1728646950891127284	CMakeFiles/Open_MP.dir/util.cpp.o.modmap	6086d83113ccdba1
+0	85	1730123533842508098	build.ninja	db3a7fda842539be
+1	6	1730123533851507876	CMakeFiles/Open_MP.dir/CXX.dd	5113da295d4a00c8
+1	6	1730123533851507876	/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json	5113da295d4a00c8
+1	6	1730123533851507876	CMakeFiles/Open_MP.dir/main.cpp.o.modmap	5113da295d4a00c8
+1	88	1730123977552514389	CMakeFiles/Open_MP.dir/main.cpp.o.ddi	5bbfa69e456ae4e
+88	92	1730123977639512910	CMakeFiles/Open_MP.dir/CXX.dd	5113da295d4a00c8
+88	92	1730123977639512910	/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json	5113da295d4a00c8
+88	92	1730123977639512910	CMakeFiles/Open_MP.dir/main.cpp.o.modmap	5113da295d4a00c8
+2	102	1730124071102968624	CMakeFiles/Open_MP.dir/main.cpp.o.ddi	5bbfa69e456ae4e
+102	106	1730124071202967017	CMakeFiles/Open_MP.dir/CXX.dd	5113da295d4a00c8
+102	106	1730124071202967017	/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json	5113da295d4a00c8
+102	106	1730124071202967017	CMakeFiles/Open_MP.dir/main.cpp.o.modmap	5113da295d4a00c8
+1	89	1730124202642925603	CMakeFiles/Open_MP.dir/main.cpp.o.ddi	5bbfa69e456ae4e
+89	93	1730124202730924280	CMakeFiles/Open_MP.dir/CXX.dd	5113da295d4a00c8
+89	93	1730124202730924280	/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json	5113da295d4a00c8
+89	93	1730124202730924280	CMakeFiles/Open_MP.dir/main.cpp.o.modmap	5113da295d4a00c8
