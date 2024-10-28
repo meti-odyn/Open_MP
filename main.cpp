@@ -10,7 +10,6 @@
 #include <list>
 #include <fstream>
 #include <vector>
-//#include "util.hpp"
 
 struct inflection_vectors {
     std::vector<std::string> prefixes;
@@ -117,21 +116,6 @@ class inflection_map : public std::map<std::string, inflection_vectors> {
     inflection_map() = default;
 
     void remove (std::string &key) {
-        // #pragma omp parallel for
-        // for (const auto& vector :at(key).key_containing_vectors) {
-        //     //std::erase(*vector, key);
-        //     //vector->erase(std::remove(vector->begin(), vector->end(), key), vector->end());
-        // }
-        // this->erase(key);
-
-        // auto it = this->find(key);
-        // if (it != this->end()) {
-        //     #pragma omp for
-        //     for (const auto& vector : it->second.key_containing_vectors) {
-        //         vector->erase(std::remove(vector->begin(), vector->end(), key), vector->end());
-        //     }
-        //     this->erase(it);
-        // }
 
         if (const auto it = this->find(key); it != this->end()) {
             for (auto& vector : it->second.key_containing_vectors) {
@@ -181,35 +165,6 @@ private:
         return is_prefix(word, suffix, offset);
     }
 
-    // std::pair<std::vector<std::list<preposition> &>,double> recursive_build_sequence
-    // (std::list<preposition> & ends_with, std::set<std::string> already_used = std::set<std::string>()) {
-    //     already_used.insert(ends_with.front().text);
-    //     already_used.insert(ends_with.back().text);
-    //     std::pair<std::vector<std::list<preposition> &>,double> sequence;
-    //     sequence.second = 0.0;
-    //     for (const std::string& prefix : groups[ends_with.front().text].prefixes ) {
-    //         if (!already_used.contains(prefix)) {
-    //             auto it = recursive_build_sequence(sequences.get_by_last_text(prefix), already_used);
-    //             if(it.second() > sequence.second) {
-    //                 sequence = it;
-    //             }
-    //         }
-    //     }
-    //     sequence.first.emplace_back(ends_with);
-    //     sequence.second += sequence.first.size();
-    //     return sequence;
-    // }
-
-    // std::vector<std::list<preposition> &> longest_sequence() {
-    //
-    //     std::pair<std::vector<std::list<preposition> &>,double> longest_sequence;
-    //     for(std::list<preposition> & seq : sequences) {
-    //         auto sequence = recursive_build_sequence(seq);
-    //         if (sequence.second > longest_sequence.second)
-    //             longest_sequence = sequence;
-    //     }
-    //     return longest_sequence.first;
-    // }
 
 public:
     std::vector<std::string> build_sequences_naive(const int offset = 1) {
@@ -274,20 +229,10 @@ public:
 
     void join_sequences(const std::vector<sequence &> & subsequences, int offset = 1) {
         auto & sequence = subsequences.front();
-        // std::vector<std::string> prefixes_to_check;
-        // std::vector<std::string> suffixes_to_check;
 
         for (auto subsequence = subsequences.begin() + 1; subsequence != subsequences.end(); subsequence++) {
             std::string first = (*subsequence).front().text;
             std::string last = sequence.back().text;
-            // if(groups[last].suffixes.size() == 2) {
-            //     suffixes_to_check.emplace_back(groups[last].suffixes.front() == first ?
-            //         groups[last].suffixes.back() : groups[last].suffixes.front());
-            // }
-            // if(groups[first].prefixes.size() == 2) {
-            //     prefixes_to_check.emplace_back(groups[first].prefixes.front() == last ?
-            //         groups[first].prefixes.back() : groups[first].prefixes.front());
-            // }
             groups.remove(last);
             groups.remove(first);
             //TODO
@@ -295,48 +240,8 @@ public:
             sequences.join_sequences(sequence, *subsequence);
         }
 
-        // for (auto & [word, vectors] : groups) {
-        //     if(groups.has_only_one_prefix_that_has_only_one_suffix(word)) {
-        //         if(sequences.is_sequence_last_key(word)) {
-        //             sequence = sequences.get_by_last_text(word);
-        //         }
-        //         else {
-        //             sequence = std::list{ preposition(vectors.prefixes.front(), offset), preposition(word, offset)};
-        //             sequences.add(sequence);
-        //         }
-        //         # pragma omp parallel sections
-        //         {
-        //             #pragma omp section
-        //             while (groups.has_only_one_prefix_that_has_only_one_suffix(sequence.front().text)) {
-        //                 std::string prefix = groups[sequence.front().text].prefixes.front();
-        //                 if(sequences.is_sequence_last_key(prefix)) {
-        //                     sequences.join_sequences(sequences.get_by_last_text(prefix), sequence);
-        //                 }
-        //                 else {
-        //                     groups.remove(sequence.front().text);
-        //                     sequence.emplace_front(prefix, offset);
-        //                 }
-        //             }
-        //
-        //             #pragma omp section
-        //             while (groups.has_only_one_suffix_that_has_only_one_prefix(sequence.back().text)) {
-        //                 std::string suffix = groups[sequence.back().text].suffixes.front();
-        //                 if(sequences.is_sequence_first_key(suffix)) {
-        //                     sequences.join_sequences(sequence, sequences.get_by_first_text(suffix));
-        //                 }
-        //                 else {
-        //                     groups.remove(sequence.back().text);
-        //                     sequence.emplace_back(suffix, offset);
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
     }
 
-    // void join_sequences(int offset = 1) {
-    //     join_sequences(longest_sequence(),offset);
-    // }
 
     void fill_groups(const std::vector<std::string>& spectrum, const int offset = 1) {
 
@@ -420,7 +325,6 @@ int main() {
     sequence_builder builder (lines);
     builder.run(6,500);
 
-    //builder
 
     return 0;
 }
