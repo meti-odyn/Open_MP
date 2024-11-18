@@ -52,19 +52,34 @@ build cmake_object_order_depends_target_Open_MP: phony || .
 build CMakeFiles/Open_MP.dir/main.cpp.o.ddi: CXX_SCAN__Open_MP_Debug /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/main.cpp || cmake_object_order_depends_target_Open_MP
   DEP_FILE = CMakeFiles/Open_MP.dir/main.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/Open_MP.dir/main.cpp.o.ddi
-  FLAGS = -fopenmp -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fopenmp -Wall
   OBJ_FILE = CMakeFiles/Open_MP.dir/main.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/Open_MP.dir/main.cpp.o.ddi.i
 
 build CMakeFiles/Open_MP.dir/main.cpp.o: CXX_COMPILER__Open_MP_scanned_Debug /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/main.cpp | CMakeFiles/Open_MP.dir/main.cpp.o.modmap || cmake_object_order_depends_target_Open_MP CMakeFiles/Open_MP.dir/CXX.dd
   DEP_FILE = CMakeFiles/Open_MP.dir/main.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/Open_MP.dir/main.cpp.o.modmap
-  FLAGS = -fopenmp -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fopenmp -Wall
   OBJECT_DIR = CMakeFiles/Open_MP.dir
   OBJECT_FILE_DIR = CMakeFiles/Open_MP.dir
   dyndep = CMakeFiles/Open_MP.dir/CXX.dd
 
-build CMakeFiles/Open_MP.dir/CXX.dd | /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json CMakeFiles/Open_MP.dir/main.cpp.o.modmap: CXX_DYNDEP__Open_MP_Debug CMakeFiles/Open_MP.dir/main.cpp.o.ddi | /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXDependInfo.json
+build CMakeFiles/Open_MP.dir/inflection_map.cpp.o.ddi: CXX_SCAN__Open_MP_Debug /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/inflection_map.cpp || cmake_object_order_depends_target_Open_MP
+  DEP_FILE = CMakeFiles/Open_MP.dir/inflection_map.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/Open_MP.dir/inflection_map.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fopenmp -Wall
+  OBJ_FILE = CMakeFiles/Open_MP.dir/inflection_map.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/Open_MP.dir/inflection_map.cpp.o.ddi.i
+
+build CMakeFiles/Open_MP.dir/inflection_map.cpp.o: CXX_COMPILER__Open_MP_scanned_Debug /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/inflection_map.cpp | CMakeFiles/Open_MP.dir/inflection_map.cpp.o.modmap || cmake_object_order_depends_target_Open_MP CMakeFiles/Open_MP.dir/CXX.dd
+  DEP_FILE = CMakeFiles/Open_MP.dir/inflection_map.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/Open_MP.dir/inflection_map.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -fopenmp -Wall
+  OBJECT_DIR = CMakeFiles/Open_MP.dir
+  OBJECT_FILE_DIR = CMakeFiles/Open_MP.dir
+  dyndep = CMakeFiles/Open_MP.dir/CXX.dd
+
+build CMakeFiles/Open_MP.dir/CXX.dd | /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXModules.json CMakeFiles/Open_MP.dir/main.cpp.o.modmap CMakeFiles/Open_MP.dir/inflection_map.cpp.o.modmap: CXX_DYNDEP__Open_MP_Debug CMakeFiles/Open_MP.dir/main.cpp.o.ddi CMakeFiles/Open_MP.dir/inflection_map.cpp.o.ddi | /home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/Open_MP.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -74,8 +89,8 @@ build CMakeFiles/Open_MP.dir/CXX.dd | /home/meti/Dokumenty/Studia/semestr_6/Rów
 #############################################
 # Link the executable Open_MP
 
-build Open_MP: CXX_EXECUTABLE_LINKER__Open_MP_Debug CMakeFiles/Open_MP.dir/main.cpp.o
-  FLAGS = -fopenmp -g
+build Open_MP: CXX_EXECUTABLE_LINKER__Open_MP_Debug CMakeFiles/Open_MP.dir/main.cpp.o CMakeFiles/Open_MP.dir/inflection_map.cpp.o
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles/Open_MP.dir
   POST_BUILD = :
   PRE_LINK = :

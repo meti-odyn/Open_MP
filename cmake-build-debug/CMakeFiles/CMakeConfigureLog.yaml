@@ -7,7 +7,7 @@ events:
       - "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.8.0-45-generic - x86_64
+      The system is: Linux - 6.8.0-47-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lx8DI7"
-      binary: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lx8DI7"
+      source: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd"
+      binary: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,10 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lx8DI7'
+        Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd'
         
-        Run Build Command(s): /app/extra/clion/bin/ninja/linux/x64/ninja -v cmTC_94678
-        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52bd9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_52bd9.dir/build.make CMakeFiles/cmTC_52bd9.dir/build
+        make[1]: Entering directory '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd'
+        Building C object CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-unknown-linux-gnu
@@ -82,8 +85,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_94678.dir/'
-         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_94678.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccAMLbr7.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52bd9.dir/'
+         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_52bd9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccGIm1iD.s
         GNU C17 (GCC) version 14.2.0 (x86_64-unknown-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -100,13 +103,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: fab15d31420faaae2e9c22234cfd7280
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_94678.dir/'
-         /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o /run/user/1000/app/com.jetbrains.CLion/ccAMLbr7.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52bd9.dir/'
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o /run/user/1000/app/com.jetbrains.CLion/ccGIm1iD.s
         GNU assembler version 2.43.1 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.43.1
         COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -o cmTC_94678   && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_52bd9
+        /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52bd9.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -o cmTC_52bd9
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper
@@ -117,12 +122,13 @@ events:
         gcc version 14.2.0 (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94678' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_94678.'
-         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccwz0SSy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_94678 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_52bd9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_52bd9.'
+         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccv1uyMX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52bd9 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
         collect2 version 14.2.0
-        /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccwz0SSy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_94678 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
+        /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccv1uyMX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52bd9 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils) 2.43.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94678' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_94678.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_52bd9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_52bd9.'
+        make[1]: Leaving directory '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd'
         
       exitCode: 0
   -
@@ -157,10 +163,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lx8DI7']
+        ignore line: [Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd']
         ignore line: []
-        ignore line: [Run Build Command(s): /app/extra/clion/bin/ninja/linux/x64/ninja -v cmTC_94678]
-        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52bd9/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_52bd9.dir/build.make CMakeFiles/cmTC_52bd9.dir/build]
+        ignore line: [make[1]: Entering directory '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UDhTSd']
+        ignore line: [Building C object CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-unknown-linux-gnu]
@@ -168,8 +177,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_94678.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_94678.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccAMLbr7.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52bd9.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_52bd9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccGIm1iD.s]
         ignore line: [GNU C17 (GCC) version 14.2.0 (x86_64-unknown-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -186,13 +195,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: fab15d31420faaae2e9c22234cfd7280]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_94678.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o /run/user/1000/app/com.jetbrains.CLion/ccAMLbr7.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52bd9.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o /run/user/1000/app/com.jetbrains.CLion/ccGIm1iD.s]
         ignore line: [GNU assembler version 2.43.1 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.43.1]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -o cmTC_94678   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_52bd9]
+        ignore line: [/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52bd9.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -o cmTC_52bd9]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper]
@@ -203,13 +214,13 @@ events:
         ignore line: [gcc version 14.2.0 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_94678' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_94678.']
-        link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccwz0SSy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_94678 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_52bd9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_52bd9.']
+        link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccv1uyMX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52bd9 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccwz0SSy.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccv1uyMX.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -223,7 +234,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_94678] ==> ignore
+          arg [cmTC_52bd9] ==> ignore
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o]
@@ -237,7 +248,7 @@ events:
           arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib]
           arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -252,7 +263,7 @@ events:
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o]
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccwz0SSy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_94678 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_94678.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccv1uyMX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52bd9 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_52bd9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'C': /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -291,8 +302,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2qW0UA"
-      binary: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2qW0UA"
+      source: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t"
+      binary: "/home/meti/Dokumenty/Studia/semestr_6/R\u00f3wnoleg\u0142e/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -302,10 +313,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2qW0UA'
+        Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t'
         
-        Run Build Command(s): /app/extra/clion/bin/ninja/linux/x64/ninja -v cmTC_0859c
-        [1/2] /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d161d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d161d.dir/build.make CMakeFiles/cmTC_d161d.dir/build
+        make[1]: Entering directory '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t'
+        Building CXX object CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-unknown-linux-gnu
@@ -313,8 +327,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0859c.dir/'
-         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0859c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccqWRd9b.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d161d.dir/'
+         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d161d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccJ458Y8.s
         GNU C++17 (GCC) version 14.2.0 (x86_64-unknown-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -334,13 +348,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 541e9967fc58527022e8370a51f09e95
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0859c.dir/'
-         /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o /run/user/1000/app/com.jetbrains.CLion/ccqWRd9b.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d161d.dir/'
+         /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o /run/user/1000/app/com.jetbrains.CLion/ccJ458Y8.s
         GNU assembler version 2.43.1 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.43.1
         COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0859c   && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d161d
+        /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d161d.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d161d
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper
@@ -351,12 +367,13 @@ events:
         gcc version 14.2.0 (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0859c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0859c.'
-         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/cc8JYcf9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0859c /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d161d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d161d.'
+         /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccomorgK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d161d /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
         collect2 version 14.2.0
-        /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/cc8JYcf9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0859c /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
+        /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccomorgK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d161d /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils) 2.43.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0859c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0859c.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d161d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d161d.'
+        make[1]: Leaving directory '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t'
         
       exitCode: 0
   -
@@ -397,10 +414,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2qW0UA']
+        ignore line: [Change Dir: '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t']
         ignore line: []
-        ignore line: [Run Build Command(s): /app/extra/clion/bin/ninja/linux/x64/ninja -v cmTC_0859c]
-        ignore line: [[1/2] /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d161d/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_d161d.dir/build.make CMakeFiles/cmTC_d161d.dir/build]
+        ignore line: [make[1]: Entering directory '/home/meti/Dokumenty/Studia/semestr_6/Równoległe/Open_MP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5Pdn8t']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -c /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-unknown-linux-gnu]
@@ -408,8 +428,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0859c.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0859c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccqWRd9b.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d161d.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d161d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /run/user/1000/app/com.jetbrains.CLion/ccJ458Y8.s]
         ignore line: [GNU C++17 (GCC) version 14.2.0 (x86_64-unknown-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -429,13 +449,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 541e9967fc58527022e8370a51f09e95]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0859c.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o /run/user/1000/app/com.jetbrains.CLion/ccqWRd9b.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d161d.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o /run/user/1000/app/com.jetbrains.CLion/ccJ458Y8.s]
         ignore line: [GNU assembler version 2.43.1 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.43.1]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0859c   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d161d]
+        ignore line: [/app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d161d.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d161d]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper]
@@ -446,13 +468,13 @@ events:
         ignore line: [gcc version 14.2.0 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0859c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0859c.']
-        link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/cc8JYcf9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0859c /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d161d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d161d.']
+        link line: [ /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2 -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccomorgK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d161d /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/cc8JYcf9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccomorgK.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -466,7 +488,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_0859c] ==> ignore
+          arg [cmTC_d161d] ==> ignore
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o]
@@ -480,7 +502,7 @@ events:
           arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib]
           arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -491,7 +513,7 @@ events:
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o]
           arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/cc8JYcf9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0859c /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_0859c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/run/user/1000/app/com.jetbrains.CLion/ccomorgK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d161d /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../.. -v CMakeFiles/cmTC_d161d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
