@@ -31,6 +31,10 @@ public:
 
     auto operator[] (const std::string& key);
 
+    // void clear_prefixes(const std::string& key);
+    //
+    // void clear_suffixes(const std::string& key);
+
     [[nodiscard]] std::shared_ptr<std::vector<std::string>> get_prefixes(const std::string& key) const { return inflection_vectors_map.at(key).prefixes; }
 
     [[nodiscard]] std::shared_ptr<std::vector<std::string>> get_suffixes(const std::string& key) const { return inflection_vectors_map.at(key).suffixes; }

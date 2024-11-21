@@ -36,6 +36,8 @@ class sequence {
     [[nodiscard]] unsigned int length() const { return length_value; }
 
     [[nodiscard]] auto size() const { return fragments.size(); }
+
+    [[nodiscard]] unsigned int get_skipped_count(unsigned int length) const;
 };
 
 #endif //SEQUENCE_HPP

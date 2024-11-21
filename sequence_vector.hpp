@@ -35,6 +35,10 @@ class sequence_vector {
     [[nodiscard]] std::string get_first () const { return sequences.front()->to_string(); }
 
     [[nodiscard]] unsigned int get_first_length() const { return sequences.front()->length(); }
+
+    [[nodiscard]] auto size() const { return sequences.size(); }
+
+    [[nodiscard]] unsigned int get_first_skipped_count (unsigned int length) { return sequences.front()->get_skipped_count(length); }
 };
 
 

@@ -54,3 +54,18 @@ bool sequence::operator==(const sequence &other) const {
     }
     return true;
 }
+
+unsigned int sequence::get_skipped_count(unsigned int length) const {
+    unsigned int current_length = front().length();
+    unsigned int skipped = 0;
+    for (const auto& fragment : fragments) {
+        if (current_length >= length) { break;}
+        current_length += fragment.offset;
+        skipped += fragment.offset - 1;
+    }
+    if (current_length < length) {
+        skipped += length - current_length;
+    }
+    return skipped;
+}
+

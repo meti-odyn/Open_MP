@@ -28,25 +28,22 @@ inflection_map::inflection_map(const std::vector<std::string>& lines, uint8_t of
         }
     }
 
-
-    // #pragma omp parallel {
     #pragma omp parallel for
-        for (const std::string& text: lines) {
-            const auto prefixes_ptr = inflection_vectors_map.at(text).prefixes;
-            for (const auto& prefix : *prefixes_ptr) {
-                #pragma omp critical
-                {
-                    inflection_vectors_map.at(prefix).keys.push_back(prefixes_ptr);
-                    inflection_vectors_map.at(prefix).suffixes->push_back(text);
-                    inflection_vectors_map.at(text).keys.push_back(inflection_vectors_map.at(prefix).suffixes);
-                }
+    for (const std::string& text: lines) {
+        const auto prefixes_ptr = inflection_vectors_map.at(text).prefixes;
+        for (const auto& prefix : *prefixes_ptr) {
+            #pragma omp critical
+            {
+                inflection_vectors_map.at(prefix).keys.push_back(prefixes_ptr);
+                inflection_vectors_map.at(prefix).suffixes->push_back(text);
+                inflection_vectors_map.at(text).keys.push_back(inflection_vectors_map.at(prefix).suffixes);
             }
         }
-    //}
+    }
 }
 
 inflection_map::inflection_map(const std::vector<std::string> &potential_prefixes, const std::vector<std::string> &potential_suffixes, uint8_t offset) {
-    //potential_suffix to front - początek seq - więc on może mieć tylko prefixy i być tylko suffixem
+
     #pragma omp parallel for
     for (const std::string& text : potential_suffixes) {
         auto range = potential_prefixes | std::views::filter([&](const std::string& word) {
@@ -59,7 +56,7 @@ inflection_map::inflection_map(const std::vector<std::string> &potential_prefixe
         }
     }
 
-#pragma omp parallel for
+    #pragma omp parallel for
     for (auto it = potential_prefixes.begin(); it != potential_prefixes.end(); ++it) { //const std::string& text : potential_prefixes
 
         #pragma omp critical
@@ -67,6 +64,7 @@ inflection_map::inflection_map(const std::vector<std::string> &potential_prefixe
             inflection_vectors_map.emplace(*it, inflection_vectors());
         }
     }
+
     #pragma omp parallel for
     for (const std::string& front : potential_suffixes) {
         const auto prefixes_ptr = inflection_vectors_map.at(front).prefixes;
@@ -89,9 +87,9 @@ bool inflection_map::is_prefix(const std::string &prefix, const std::string &wor
 
 
 void inflection_map::remove(const std::string& key) {
+    if (!inflection_vectors_map.contains(key)) return;
     #pragma omp for
     for (auto& vector : inflection_vectors_map.at(key).keys) {
-        //vector->erase(key);
         std::erase(*vector, key);
     }
     inflection_vectors_map.erase(key);
